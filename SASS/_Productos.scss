@@ -1,0 +1,51 @@
+.BodyProd{
+    background-image: url(/Assets/IMG/prodfondo2.jpg);
+    background-size: cover;
+}
+
+.carruprod{
+    height: fit-content;
+    padding: 25px 50px;
+}
+.LineasProd{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    border: 5px rgba(180, 180, 192, 0.63) solid;
+    border-radius:45px;
+    margin: 25px;
+    background-color: rgba(180, 180, 192, 0.63);
+    text-shadow: 0px 0px 5px #E0E0E0;
+    -webkit-box-shadow: 0px 0px 50px 9px #D4D4D4; 
+    box-shadow: 0px 0px 50px 9px #D4D4D4;
+    .titulolinea{
+        border-bottom: 10px white double;
+        text-align: left;
+        padding-left: 45px;
+        padding-bottom: 10px;
+    }
+    .CartasProd{
+        width: fit-content;
+        display: flex;
+        justify-content: space-evenly;
+        .ColProd{
+            text-align: center;
+            border-radius: 25px;
+            margin: 15px;
+            padding: 2px 5px;
+            .Foto{
+                padding: 2px,5px;
+                width: 80%;
+                border-radius: 25px;
+            }
+        }
+        .ColProd:hover{
+            transform: scale(1.1);
+            background-color: rgba(180, 180, 192, 0.715) ;
+            transition: 900ms;
+            cursor: pointer;
+        }
+    }
+}

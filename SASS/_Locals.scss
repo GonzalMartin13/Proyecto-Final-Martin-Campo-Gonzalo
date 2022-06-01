@@ -1,0 +1,54 @@
+.bodyloc{
+    background-image: url(/Assets/IMG/Lamp.jpg);
+    background-size: cover;
+}
+
+.CabeceraLocales{
+    text-align:center;
+    border: 5px rgba(180, 180, 192, 0.63) solid;
+    border-radius:45px;
+    margin: 25px;
+    background-color: rgba(180, 180, 192, 0.63);
+    text-shadow: 0px 0px 5px #E0E0E0;
+    -webkit-box-shadow: 0px 0px 50px 9px #D4D4D4; 
+    box-shadow: 0px 0px 50px 9px #D4D4D4;
+    
+    .table{
+        border: none;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.LineasLoc{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    border: 5px rgba(180, 180, 192, 0.63) solid;
+    border-radius:45px;
+    margin: 25px;
+    background-color: rgba(180, 180, 192, 0.63);
+    text-shadow: 0px 0px 5px #E0E0E0;
+    -webkit-box-shadow: 0px 0px 50px 9px #D4D4D4; 
+    box-shadow: 0px 0px 50px 9px #D4D4D4;
+
+    .ItemsLoc{
+        display: flex;
+        justify-content: space-around;
+        .CajaLoc{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            padding: 15px;
+            width: 450px;
+            img{
+                border-radius: 50px;
+            }
+            iframe{
+                border-radius: 50px;
+            }
+        }
+    }
+}

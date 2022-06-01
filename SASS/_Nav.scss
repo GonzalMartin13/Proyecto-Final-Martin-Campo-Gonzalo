@@ -1,0 +1,38 @@
+nav{
+    border-bottom: 5px aliceblue double;
+    width: 98%;
+    margin-left: 1%;
+    div{
+        ul{
+            display: inline;
+            width: max-content;
+        }
+    }
+    div{
+        svg{
+            margin-right: 15px;
+            color: aliceblue;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+#navbarText{
+    margin-left: 8rem;
+}
+#Logo{
+    width: max-content;
+    background-image: linear-gradient(
+        to right, rgb(216, 37, 32), rgb(255, 141, 0), rgb(255, 233, 0), rgb(0, 127, 71), rgb(48, 100, 169), #87189D);
+    background-size: 400px, 400px;
+    animation: grad-fondo 3s infinite ease-in;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#Logo:hover{
+    animation: grad-fondo 350ms infinite ease-in;
+}
+
+
