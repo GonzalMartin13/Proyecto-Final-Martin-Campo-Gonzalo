@@ -267,7 +267,7 @@ footer div svg:hover {
   padding-bottom: 15px;
 }
 
-.form button {
+.form .botonformu {
   width: 50%;
   margin: 0% 25%;
 }
@@ -486,7 +486,7 @@ footer div svg:hover {
   width: 100%;
 }
 
-.FormHome .formu input[type="submit"] {
+.FormHome .formu .botonformu[type="submit"] {
   width: 50%;
   margin: 2% 25%;
   text-align: center;
