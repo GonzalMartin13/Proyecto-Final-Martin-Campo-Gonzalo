@@ -186,6 +186,7 @@ footer div svg:hover {
 .carruprod {
   height: fit-content;
   padding: 25px 50px;
+  border-radius: 50px;
 }
 
 .LineasProd {
@@ -334,14 +335,17 @@ footer div svg:hover {
   grid-template-columns: auto auto;
   grid-template-rows: 100px auto auto 500px auto 100px;
   grid-template-areas: "nav nav"    "Head Head" "Sec Sec" "Prod Prod" "Cont Cont" "Foot Foot";
-  text-shadow: 0px 0px 9px rgba(192, 190, 190, 0.7);
-  background-image: linear-gradient(120deg, rgba(51, 49, 49, 0.59) 0%, rgba(70, 62, 63, 0.692) 100%), url("../IMG/HeaderHome.jpg");
+  background-image: linear-gradient(120deg, rgba(160, 151, 151, 0.671) 0%, rgba(56, 45, 47, 0.692) 100%), url("../IMG/HeaderHome.jpg");
   height: fit-content;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
+}
+
+.Shadow {
+  text-shadow: 0px 0px 9px rgba(221, 203, 203, 0.836);
 }
 
 .navbar {
@@ -375,7 +379,8 @@ footer div svg:hover {
 .Sec {
   grid-area: Sec;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: rgba(180, 180, 192, 0.664);
 }
 
@@ -395,7 +400,6 @@ footer div svg:hover {
 }
 
 .HomeProd .TituloProd {
-  border-top: solid #fff 1px;
   text-align: center;
   margin: 35px 0px;
 }
@@ -410,7 +414,7 @@ footer div svg:hover {
 .HomeProd .content-cards .card {
   background-color: #b4b4c0;
   width: 30%;
-  height: fit-content;
+  height: 400px;
   text-align: center;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
   transform: scale(1);
@@ -428,12 +432,13 @@ footer div svg:hover {
   margin: 30px 0 20px 0;
   padding: 2px,5px;
   width: 80%;
+  height: 220px;
   border-radius: 25px;
 }
 
 .HomeProd .content-cards .card a p {
-  font-weight: 300;
-  font-size: 25px;
+  font-weight: 200;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -450,7 +455,6 @@ footer div svg:hover {
 }
 
 .FormHome .TituloForm {
-  border-top: solid #fff 1px;
   text-align: center;
   margin: 25px 0px 25px 0px;
 }
