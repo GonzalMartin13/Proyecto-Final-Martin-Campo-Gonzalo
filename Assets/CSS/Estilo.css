@@ -186,7 +186,6 @@ footer div svg:hover {
 .carruprod {
   height: fit-content;
   padding: 25px 50px;
-  border-radius: 50px;
 }
 
 .LineasProd {
@@ -225,15 +224,18 @@ footer div svg:hover {
 
 .LineasProd .CartasProd .ColProd .Foto {
   padding: 2px,5px;
-  width: 80%;
+  width: 400px;
+  height: 300px;
   border-radius: 25px;
+  overflow: hidden;
 }
 
 .LineasProd .CartasProd .ColProd:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: rgba(180, 180, 192, 0.715);
   transition: 900ms;
   cursor: pointer;
+  height: min-content;
 }
 
 .bodyform {
