@@ -1,6 +1,11 @@
 .bodyloc{
     background-image: url(../IMG/Lamp.jpg);
+    height: fit-content;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
 }
 
 .CabeceraLocales{
@@ -50,5 +55,9 @@
                 border-radius: 50px;
             }
         }
+    }
+    .TituloLoc{
+        margin-top: 5px;
+        margin-bottom: 2px;
     }
 }

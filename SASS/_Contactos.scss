@@ -1,6 +1,11 @@
 .bodyform{
     background-image: url(../IMG/Contacfondo.jpg);
+    height: fit-content;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
 }
 
 .form{

@@ -1,4 +1,5 @@
 nav {
+  position: absolute;
   border-bottom: 5px aliceblue double;
   width: 98%;
   margin-left: 1%;
@@ -6,11 +7,11 @@ nav {
 
 nav div ul {
   display: inline;
-  width: max-content;
+  width: fit-content;
 }
 
 nav div svg {
-  margin-right: 15px;
+  margin-right: 25px;
   color: aliceblue;
 }
 
@@ -23,7 +24,9 @@ nav div svg a {
 }
 
 #Logo {
-  width: max-content;
+  width: auto;
+  position: relative;
+  left: 25px;
   background-image: linear-gradient(to right, #d82520, #ff8d00, #ffe900, #007f47, #3064a9, #87189D);
   background-size: 400px, 400px;
   animation: grad-fondo 3s infinite ease-in;
@@ -34,6 +37,11 @@ nav div svg a {
 
 #Logo:hover {
   animation: grad-fondo 350ms infinite ease-in;
+}
+
+.ListaNav {
+  display: none;
+  border: 5px white solid;
 }
 
 .BodyIndex {
@@ -173,14 +181,19 @@ footer div svg:hover {
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 25px;
   box-sizing: border-box;
 }
 
 .BodyProd {
   background-image: url(../IMG/prodfondo2.jpg);
+  height: fit-content;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .carruprod {
@@ -240,7 +253,12 @@ footer div svg:hover {
 
 .bodyform {
   background-image: url(../IMG/Contacfondo.jpg);
+  height: fit-content;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .form {
@@ -277,7 +295,12 @@ footer div svg:hover {
 
 .bodyloc {
   background-image: url(../IMG/Lamp.jpg);
+  height: fit-content;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .CabeceraLocales {
@@ -330,6 +353,11 @@ footer div svg:hover {
 
 .LineasLoc .ItemsLoc .CajaLoc iframe {
   border-radius: 50px;
+}
+
+.LineasLoc .TituloLoc {
+  margin-top: 5px;
+  margin-bottom: 2px;
 }
 
 .BodyCasa {
