@@ -6,5 +6,16 @@
     box-sizing: border-box;
 }
 body{
-    overflow:hidden;
+    overflow: auto; 
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+:hover::-webkit-scrollbar {
+        display: initial;
+}
+::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0);
 }

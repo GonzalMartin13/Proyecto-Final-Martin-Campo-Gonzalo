@@ -1,0 +1,11 @@
+@media (max-width: 992px){
+    
+    div{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        p{
+            display: inline-block;
+        }
+    }
+}

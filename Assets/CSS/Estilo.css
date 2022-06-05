@@ -1,7 +1,7 @@
 nav {
   position: absolute;
   margin-top: 1rem;
-  border-bottom: 1rem whitesmoke double;
+  border-bottom: 1rem rgba(245, 245, 245, 0.563) double;
 }
 
 nav ul li a:hover {
@@ -42,7 +42,6 @@ nav .NavList li {
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  overflow: hidden;
 }
 
 main {
@@ -174,37 +173,6 @@ footer svg:hover {
   }
 }
 
-@media (max-width: 668px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    text-align: center;
-  }
-}
-
-@media (max-width: 420px) {
-  footer {
-    display: flex;
-    width: 105%;
-    align-items: center;
-  }
-  footer .EnlacesFooter {
-    text-align: center;
-  }
-}
-
-@media (max-width: 992px) {
-  div {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-  }
-  div p {
-    display: inline-block;
-  }
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -214,7 +182,20 @@ footer svg:hover {
 }
 
 body {
-  overflow: hidden;
+  overflow: auto;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:hover::-webkit-scrollbar {
+  display: initial;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .BodyProd {
@@ -225,6 +206,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  overflow: overlay;
 }
 
 .carruprod {
@@ -566,5 +548,40 @@ body {
 
 .FootHome {
   grid-area: Foot;
+}
+
+@media (max-width: 420px) {
+  footer {
+    display: flex;
+    width: 105%;
+    align-items: center;
+  }
+  footer .EnlacesFooter {
+    text-align: center;
+  }
+  nav {
+    width: 150%;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 668px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  div {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  div p {
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=Estilo.css.map */

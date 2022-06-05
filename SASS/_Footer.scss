@@ -72,35 +72,3 @@ footer{
     }
 }
 
-@media  (max-width: 668px){
-    footer{
-        flex-direction: column;
-        align-items: center;
-        height: fit-content;
-        text-align: center;
-    }
-}
-
-@media (max-width: 420px) {
-    footer{
-        display: flex;
-        width: 105%;
-        align-items:center;
-        .EnlacesFooter{
-            text-align: center;
-        }
-    }
-    
-}
-
-@media (max-width: 992px){
-    
-    div{
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        p{
-            display: inline-block;
-        }
-    }
-}
