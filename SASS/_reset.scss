@@ -5,17 +5,16 @@
     font-size: 25px;
     box-sizing: border-box;
 }
-// body{
-//     overflow: auto; 
-//     overflow: overlay;
-// }
+body{
+    overflow: auto; 
+}
 
-// ::-webkit-scrollbar {
-//     display: none;
-// }
-// :hover::-webkit-scrollbar {
-//         display: initial;
-// }
-// ::-webkit-scrollbar-thumb {
-//         background-color: rgba(0, 0, 0, 0);
-// }
+::-webkit-scrollbar {
+    display: none;
+}
+:hover::-webkit-scrollbar {
+        display: initial;
+}
+::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0);
+}

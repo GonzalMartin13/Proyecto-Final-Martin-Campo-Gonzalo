@@ -181,6 +181,22 @@ footer svg:hover {
   box-sizing: border-box;
 }
 
+body {
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:hover::-webkit-scrollbar {
+  display: initial;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .BodyProd {
   background-image: url(../IMG/prodfondo2.jpg);
   height: max-content;
@@ -536,15 +552,22 @@ footer svg:hover {
 @media (max-width: 420px) {
   footer {
     display: flex;
-    width: 105%;
+    width: auto;
     align-items: center;
   }
   footer .EnlacesFooter {
     text-align: center;
   }
   nav {
-    width: 150%;
-    flex-wrap: nowrap;
+    width: auto;
+  }
+  .ItemsNav {
+    width: 50%;
+    display: flex;
+    font-size: smaller;
+  }
+  .ItemsNav a i {
+    display: none;
   }
 }
 
