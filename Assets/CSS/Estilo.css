@@ -1,32 +1,26 @@
 nav {
   position: absolute;
-  border-bottom: 5px aliceblue double;
-  width: 98%;
-  margin-left: 1%;
+  margin-top: 1rem;
+  border-bottom: 1rem whitesmoke double;
 }
 
-nav div ul {
-  display: inline;
-  width: fit-content;
+nav ul li a:hover {
+  transition: 800ms;
+  color: whitesmoke;
+  text-decoration: underline;
 }
 
-nav div svg {
-  margin-right: 25px;
-  color: aliceblue;
+nav .NavList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-nav div svg a {
-  text-decoration: none;
-}
-
-#navbarText {
-  margin-left: 8rem;
+nav .NavList li {
+  margin: 0px 10px 0px 10px;
 }
 
 #Logo {
-  width: auto;
-  position: relative;
-  left: 25px;
   background-image: linear-gradient(to right, #d82520, #ff8d00, #ffe900, #007f47, #3064a9, #87189D);
   background-size: 400px, 400px;
   animation: grad-fondo 3s infinite ease-in;
@@ -37,11 +31,6 @@ nav div svg a {
 
 #Logo:hover {
   animation: grad-fondo 350ms infinite ease-in;
-}
-
-.ListaNav {
-  display: none;
-  border: 5px white solid;
 }
 
 .BodyIndex {
@@ -363,7 +352,7 @@ footer div svg:hover {
 .BodyCasa {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 100px auto auto 500px auto 100px;
+  grid-template-rows: fit-content auto auto 500px auto 100px;
   grid-template-areas: "nav nav"    "Head Head" "Sec Sec" "Prod Prod" "Cont Cont" "Foot Foot";
   background-image: linear-gradient(120deg, rgba(160, 151, 151, 0.671) 0%, rgba(56, 45, 47, 0.692) 100%), url("../IMG/HeaderHome.jpg");
   height: fit-content;

@@ -1,7 +1,7 @@
 .BodyCasa{
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 100px auto auto 500px auto 100px;
+    grid-template-rows: fit-content auto auto 500px auto 100px;
     grid-template-areas: "nav nav"   
                         "Head Head"
                         "Sec Sec"
