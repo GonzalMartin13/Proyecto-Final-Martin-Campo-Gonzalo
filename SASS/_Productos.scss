@@ -11,7 +11,7 @@
 
 .carruprod{
     height: fit-content;
-    padding: 25px 50px;
+    margin: 25px 10%;
 }
 .LineasProd{
     height: fit-content;
@@ -21,15 +21,14 @@
     text-align: center;
     border: 5px rgba(180, 180, 192, 0.63) solid;
     border-radius:45px;
-    margin: 25px;
+    margin: 25px 10%;
     background-color: rgba(180, 180, 192, 0.63);
     text-shadow: 0px 0px 5px #E0E0E0;
     -webkit-box-shadow: 0px 0px 50px 9px #D4D4D4; 
     box-shadow: 0px 0px 50px 9px #D4D4D4;
     .titulolinea{
         border-bottom: 10px white double;
-        text-align: left;
-        padding-left: 45px;
+        text-align: center;
         padding-bottom: 10px;
     }
     .CartasProd{

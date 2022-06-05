@@ -125,4 +125,22 @@ nav{
     }
 
     /* Final Locales */ /* Arranca Productos */
+.carruprod{
+    width: 90%;
+    margin: 5%;
+}
+.LineasProd{
+    width: 90%;
+    margin: 5%;
+    .CartasProd{
+        flex-direction: column;
+        p{display: none;}
+        .ColProd{
+            border-bottom: 3px double white;
+            flex-direction: column;
+        }
+    }
+}
+
+
 }
