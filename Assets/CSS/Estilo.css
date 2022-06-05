@@ -42,6 +42,7 @@ nav .NavList li {
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  overflow: hidden;
 }
 
 main {
@@ -212,10 +213,14 @@ footer svg:hover {
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 .BodyProd {
   background-image: url(../IMG/prodfondo2.jpg);
-  height: fit-content;
-  background-repeat: no-repeat;
+  height: max-content;
+  /*     background-repeat: no-repeat; */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
