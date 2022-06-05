@@ -558,16 +558,31 @@ body {
   footer .EnlacesFooter {
     text-align: center;
   }
-  nav {
-    width: auto;
+  footer .EnlacesFooter ul {
+    margin: 15px 30.5px;
+    padding: 0px;
+  }
+  nav .MenuHamburguesa
+ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .ItemsNav {
     width: 50%;
     display: flex;
     font-size: smaller;
   }
+  .ItemsNav a {
+    margin-right: 10px;
+  }
   .ItemsNav a i {
     display: none;
+  }
+  .BodyCasa {
+    grid-template-columns: auto;
+    grid-template-rows: max-content auto auto 500px auto 100px;
+    grid-template-areas: "nav"    "Head" "Sec" "Prod" "Cont" "Foot";
   }
 }
 

@@ -5,21 +5,44 @@
         align-items:center;
         .EnlacesFooter{
             text-align: center;
+            ul{
+                margin: 15px 30.5px;
+                padding: 0px;
+            }
         }
     }
     nav{
-        width: auto;
-    }
+        .MenuHamburguesa
+            ul{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+    
     .ItemsNav{
         width: 50%;
         display: flex;
         font-size: smaller;
-        a{
+        a{ 
+            margin-right: 10px;
             i{
                 display: none;
+            }
         }
     }
-}
+
+    .BodyCasa{
+        grid-template-columns: auto;
+        grid-template-rows: max-content auto auto 500px auto 100px;
+        grid-template-areas: "nav"   
+                            "Head"
+                            "Sec"
+                            "Prod"
+                            "Cont"
+                            "Foot";
+    }
 
 
 
