@@ -93,9 +93,36 @@ nav{
             margin: 0px 25%;
             .botonformu{
                 width: fit-content;
+                font-size: smaller;
             }
         }
     }
 
+    /* Fin Contacto */ /* Comienza Locales */
+    .CabeceraLocales{
+        .table{
+        display: none;
 
+        }
+    }
+    .LineasLoc{
+        flex-direction: column;
+        margin: 10px;
+        .ItemsLoc{
+            flex-direction: column;
+            .CajaLoc{
+                width: fit-content;
+                padding: 8px;
+                Iframe{
+                    display: none;
+                }
+                p{
+                    font-size: smaller;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    /* Final Locales */ /* Arranca Productos */
 }

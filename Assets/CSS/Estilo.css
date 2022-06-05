@@ -189,19 +189,18 @@ footer svg:hover {
 }
 
 body {
-  overflow: hidden;
   overflow: auto;
 }
 
-::-webkit-scrollbar {
+body body::-webkit-scrollbar {
   display: none;
 }
 
-:hover::-webkit-scrollbar {
+body body:hover::-webkit-scrollbar {
   display: initial;
 }
 
-::-webkit-scrollbar-thumb {
+body body::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -653,7 +652,33 @@ body {
   }
   .form .botoncontac .botonformu {
     width: fit-content;
+    font-size: smaller;
   }
+  /* Fin Contacto */
+  /* Comienza Locales */
+  .CabeceraLocales .table {
+    display: none;
+  }
+  .LineasLoc {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .LineasLoc .ItemsLoc {
+    flex-direction: column;
+  }
+  .LineasLoc .ItemsLoc .CajaLoc {
+    width: fit-content;
+    padding: 8px;
+  }
+  .LineasLoc .ItemsLoc .CajaLoc Iframe {
+    display: none;
+  }
+  .LineasLoc .ItemsLoc .CajaLoc p {
+    font-size: smaller;
+    margin-bottom: 5px;
+  }
+  /* Final Locales */
+  /* Arranca Productos */
 }
 
 @media (max-width: 668px) {
