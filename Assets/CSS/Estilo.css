@@ -102,10 +102,11 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: space-around;
   width: auto;
   height: 6rem;
   position: relative;
-  border-top: 1rem whitesmoke double;
+  border-top: 1rem rgba(245, 245, 245, 0.563) double;
   margin-bottom: 1rem;
 }
 
@@ -148,7 +149,13 @@ footer .EnlacesFooter li a:hover {
   transition: 1s;
 }
 
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
 footer div svg {
+  margin-left: 20px;
   color: aliceblue;
 }
 
@@ -182,6 +189,7 @@ footer svg:hover {
 }
 
 body {
+  overflow: hidden;
   overflow: auto;
 }
 
@@ -374,8 +382,8 @@ body {
 
 .BodyCasa {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: fit-content auto auto 500px auto 100px;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 6% fit-content auto 30% 2% 7%;
   grid-template-areas: "nav nav"    "Head Head" "Sec Sec" "Prod Prod" "Cont Cont" "Foot Foot";
   background-image: linear-gradient(120deg, rgba(160, 151, 151, 0.671) 0%, rgba(56, 45, 47, 0.692) 100%), url("../IMG/HeaderHome.jpg");
   height: fit-content;
@@ -418,6 +426,13 @@ body {
   font-size: 25px;
 }
 
+@media (max-width: 420px) {
+  .HeadHome .textos-home {
+    height: 100px;
+    margin-top: auto;
+  }
+}
+
 .Sec {
   grid-area: Sec;
   display: flex;
@@ -431,7 +446,13 @@ body {
   border-radius: 50px;
 }
 
-.Sec .TextosSec {
+@media (max-width: 420px) {
+  .Sec .YTSec {
+    display: none;
+  }
+}
+
+.TextosSec {
   text-align: center;
   width: 500px;
 }
@@ -550,6 +571,7 @@ body {
 }
 
 @media (max-width: 420px) {
+  /* Footer */
   footer {
     display: flex;
     width: auto;
@@ -562,12 +584,21 @@ body {
     margin: 15px 30.5px;
     padding: 0px;
   }
-  nav .MenuHamburguesa
-ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /* /Fin Footer*/
+  /* Arranca Nav */
+  nav {
+    width: 100%;
   }
+  div .NavList {
+    width: min-content;
+    padding: 1px 20px 1px 20px;
+  }
+  div .NavList li a {
+    padding: 10px;
+    margin: 0px;
+    font-size: smaller;
+  }
+  /* Navegador index */
   .ItemsNav {
     width: 50%;
     display: flex;
@@ -579,10 +610,49 @@ ul {
   .ItemsNav a i {
     display: none;
   }
+  /* Fin Navegador */
+  /* Comienzo Home*/
   .BodyCasa {
-    grid-template-columns: auto;
-    grid-template-rows: max-content auto auto 500px auto 100px;
-    grid-template-areas: "nav"    "Head" "Sec" "Prod" "Cont" "Foot";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px min-content auto 200px 100px;
+    grid-template-areas: "nav nav"    "Head Head" "Prod Prod" "Sec Cont"                                                "Foot Foot";
+  }
+  /* Fin Home */
+  /* Comienzo Contactos */
+  .opinion {
+    flex-direction: column;
+  }
+  .opinion .opinion__selectores {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    width: fit-content;
+  }
+  .opinion .opinion__selectores .form-check {
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+  }
+  .form {
+    margin: 20px 15%;
+    padding: 5%;
+    width: fit-content;
+  }
+  .form .form-control {
+    width: 200px;
+    padding: 5px;
+  }
+  .form textarea {
+    width: fit-content;
+    margin: 5%;
+  }
+  .form .botoncontac {
+    margin: 0px 25%;
+  }
+  .form .botoncontac .botonformu {
+    width: fit-content;
   }
 }
 

@@ -1,7 +1,9 @@
+@import "Mixings";
+
 .BodyCasa{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: fit-content auto auto 500px auto 100px;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 6% fit-content auto 30% 2% 7%;
     grid-template-areas: "nav nav"   
                         "Head Head"
                         "Sec Sec"
@@ -21,6 +23,7 @@
     text-shadow: 0px 0px 9px rgba(221, 203, 203, 0.836);
 
 }
+
 .navbar{ 
     grid-area: nav;
 }
@@ -44,6 +47,10 @@
         p{
             font-size: 25px;
         }
+        @include Responsive(){
+            height: 100px;
+            margin-top: auto;
+        }
     }
 }
 
@@ -56,12 +63,19 @@
     .YTSec{
         width: 400px;
         border-radius: 50px;
+
+        @include Responsive(){
+            display: none;
+        }
+    }
+    
+        
     }
     .TextosSec{
         text-align: center;
         width: 500px;
     }
-}
+
 
 .HomeProd{
     grid-area: Prod;

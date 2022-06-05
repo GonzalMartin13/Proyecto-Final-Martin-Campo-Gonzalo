@@ -1,4 +1,6 @@
 @media (max-width: 420px) {
+/* Footer */
+
     footer{
         display: flex;
         width: auto;
@@ -11,16 +13,25 @@
             }
         }
     }
-    nav{
-        .MenuHamburguesa
-            ul{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
 
+    /* /Fin Footer*/ /* Arranca Nav */  
+nav{
+    width: 100%;
+}
+    div{
+        .NavList{
+            width: min-content;
+            padding:1px 20px 1px 20px;
+            li{
+                a{
+                padding: 10px;
+                margin: 0px;
+                font-size: smaller;
+                }
+            }
         }
-    
+    }
+    /* Navegador index */
     .ItemsNav{
         width: 50%;
         display: flex;
@@ -33,18 +44,58 @@
         }
     }
 
-    .BodyCasa{
-        grid-template-columns: auto;
-        grid-template-rows: max-content auto auto 500px auto 100px;
-        grid-template-areas: "nav"   
-                            "Head"
-                            "Sec"
-                            "Prod"
-                            "Cont"
-                            "Foot";
+
+
+/* Fin Navegador */ /* Comienzo Home*/
+
+.BodyCasa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px min-content auto 200px 100px;
+    grid-template-areas: "nav nav"   
+                        "Head Head"
+                        "Prod Prod"
+                        "Sec Cont"                                               
+                        "Foot Foot";
+
+}
+
+
+/* Fin Home */ /* Comienzo Contactos */
+    .opinion{
+        flex-direction: column;
+        .opinion__selectores{
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+            justify-content: space-around;
+            width: fit-content;
+            .form-check{
+                display: inline-block;
+                flex-direction: row;
+                align-items: center;
+                padding: 5px;                
+            }            
+        }
     }
-
-
+    .form{
+        margin: 20px 15%;
+        padding: 5%;
+        width: fit-content;
+        .form-control{
+            width: 200px;
+            padding: 5px;
+        }
+        textarea{
+            width: fit-content;
+            margin: 5%;
+        }
+        .botoncontac{
+            margin: 0px 25%;
+            .botonformu{
+                width: fit-content;
+            }
+        }
+    }
 
 
 }
