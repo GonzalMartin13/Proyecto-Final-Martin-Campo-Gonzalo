@@ -42,14 +42,21 @@
         margin-bottom: 20px;
         h1{
             font-size: 60px;
-            margin-top: 10px;
         }
         p{
             font-size: 25px;
         }
+
         @include Responsive(){
-            height: 100px;
-            margin-top: auto;
+            h1{ text-align: center;
+                font-size:large;
+                margin-top: auto;
+            }
+            p{
+                font-size: medium;
+                text-align: center;
+            }
+            
         }
     }
 }

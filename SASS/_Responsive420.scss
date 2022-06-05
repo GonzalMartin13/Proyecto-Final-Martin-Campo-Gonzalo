@@ -1,4 +1,4 @@
-@media (max-width: 420px) {
+@media (max-width: 420px){
 /* Footer */
 
     footer{
@@ -17,16 +17,16 @@
     /* /Fin Footer*/ /* Arranca Nav */  
 nav{
     width: 100%;
-}
+    }
     div{
         .NavList{
-            width: min-content;
+            width: 350px;
             padding:1px 20px 1px 20px;
             li{
                 a{
-                padding: 10px;
-                margin: 0px;
-                font-size: smaller;
+                    padding: 10px;
+                    margin: 0px;
+                    font-size: smaller;
                 }
             }
         }
@@ -49,17 +49,56 @@ nav{
 /* Fin Navegador */ /* Comienzo Home*/
 
 .BodyCasa{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px min-content auto 200px 100px;
-    grid-template-areas: "nav nav"   
-                        "Head Head"
-                        "Prod Prod"
-                        "Sec Cont"                                               
-                        "Foot Foot";
-
-}
-
+    grid-template-columns: 100% ;
+    grid-template-rows: 180px 1fr auto auto auto auto;
+    grid-template-areas: "nav"   
+                        "Head"
+                        "Prod"
+                        "Sec" 
+                        "Cont"                                              
+                        "Foot";
+    }
+    .HeadHome{
+        .textos-home{
+            margin: 5px 15px;
+            padding-top: 15px;
+        }   
+    }
+    .Sec{
+        .TextosSec{
+            flex-direction: column;
+            margin: 5px 15px;
+            text-align: center;
+            .TituloSec{
+                font-size: medium;
+            }
+            .TextSec{
+                font-size: small;
+            }
+        }   
+    }
+    .HomeProd{
+        .TituloProd{
+            font-size: xx-large;
+            margin: 5px 5% 15px;
+            text-align: center;
+        }
+        .content-cards{
+            flex-direction:column;
+            .card{
+                flex-direction: row;
+                width: 90%;
+                margin: 5%;
+                justify-content: center;
+                pad:2%;
+            }
+        }
+    }
+    .FormHome{
+        .contenedor{
+            flex-direction: column;
+        }
+    }
 
 /* Fin Home */ /* Comienzo Contactos */
     .opinion{

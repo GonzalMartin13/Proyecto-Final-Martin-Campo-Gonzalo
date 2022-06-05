@@ -417,7 +417,6 @@ body body::-webkit-scrollbar-thumb {
 
 .HeadHome .textos-home h1 {
   font-size: 60px;
-  margin-top: 10px;
 }
 
 .HeadHome .textos-home p {
@@ -425,9 +424,14 @@ body body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 420px) {
-  .HeadHome .textos-home {
-    height: 100px;
+  .HeadHome .textos-home h1 {
+    text-align: center;
+    font-size: large;
     margin-top: auto;
+  }
+  .HeadHome .textos-home p {
+    font-size: medium;
+    text-align: center;
   }
 }
 
@@ -588,7 +592,7 @@ body body::-webkit-scrollbar-thumb {
     width: 100%;
   }
   div .NavList {
-    width: min-content;
+    width: 350px;
     padding: 1px 20px 1px 20px;
   }
   div .NavList li a {
@@ -611,10 +615,42 @@ body body::-webkit-scrollbar-thumb {
   /* Fin Navegador */
   /* Comienzo Home*/
   .BodyCasa {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px min-content auto 200px 100px;
-    grid-template-areas: "nav nav"    "Head Head" "Prod Prod" "Sec Cont"                                                "Foot Foot";
+    grid-template-columns: 100%;
+    grid-template-rows: 180px 1fr auto auto auto auto;
+    grid-template-areas: "nav"    "Head" "Prod" "Sec"  "Cont"                                               "Foot";
+  }
+  .HeadHome .textos-home {
+    margin: 5px 15px;
+    padding-top: 15px;
+  }
+  .Sec .TextosSec {
+    flex-direction: column;
+    margin: 5px 15px;
+    text-align: center;
+  }
+  .Sec .TextosSec .TituloSec {
+    font-size: medium;
+  }
+  .Sec .TextosSec .TextSec {
+    font-size: small;
+  }
+  .HomeProd .TituloProd {
+    font-size: xx-large;
+    margin: 5px 5% 15px;
+    text-align: center;
+  }
+  .HomeProd .content-cards {
+    flex-direction: column;
+  }
+  .HomeProd .content-cards .card {
+    flex-direction: row;
+    width: 90%;
+    margin: 5%;
+    justify-content: center;
+    pad: 2%;
+  }
+  .FormHome .contenedor {
+    flex-direction: column;
   }
   /* Fin Home */
   /* Comienzo Contactos */
