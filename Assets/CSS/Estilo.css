@@ -801,15 +801,4 @@ body body::-webkit-scrollbar-thumb {
     padding: 1% 25%;
   }
 }
-
-@media (max-width: 992px) {
-  div {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-  }
-  div p {
-    display: inline-block;
-  }
-}
 /*# sourceMappingURL=Estilo.css.map */
